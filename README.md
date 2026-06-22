@@ -22,6 +22,9 @@ Before you begin, ensure you have the following installed:
 
 ---
 
+> [!TIP]
+> A virtual environment is recommended to keep this project's dependencies isolated from your system Python. Create and activate it before installing anything in step 3.
+
 ### Installation
 
 For this repository:
