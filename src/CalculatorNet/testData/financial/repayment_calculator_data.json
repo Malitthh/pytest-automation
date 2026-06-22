@@ -1,0 +1,114 @@
+{
+  "valid_cases": [
+    {
+      "id": "mid_term_personal_loan",
+      "loan_amount": 32000,
+      "annual_interest_rate": 6,
+      "years": 5,
+      "expected_monthly": "$618.65",
+      "expected_total": "$37,118.98",
+      "expected_interest": "$5,118.98"
+    },
+    {
+      "id": "high_interest_personal_loan",
+      "loan_amount": 10000,
+      "annual_interest_rate": 12,
+      "years": 5,
+      "expected_monthly": "$222.44",
+      "expected_total": "$13,346.67",
+      "expected_interest": "$3,346.67"
+    }
+  ],
+  "invalid_cases": [
+    {
+      "id": "empty_loan_amount",
+      "loan_amount": "",
+      "annual_interest_rate": "6",
+      "years": "5",
+      "month": "0",
+      "expected_error": "Please provide a positive loan balance amount."
+
+    },
+    {
+      "id": "non_numeric_loan_amount",
+      "loan_amount": "abc",
+      "annual_interest_rate": "6",
+      "years": "5",
+      "month": "0",
+      "expected_error": "Please provide a positive loan balance amount."
+    },
+    {
+      "id": "negative_loan_amount",
+      "loan_amount": "-1000",
+      "annual_interest_rate": "6",
+      "years": "5",
+      "month": "0",
+      "expected_error": "Please provide a positive loan balance amount."
+    },
+    {
+      "id": "zero_loan_term",
+      "loan_amount": "2000",
+      "annual_interest_rate": "3",
+      "years": "0",
+      "month": "0",
+      "expected_error": "Please provide a positive payback time value."
+    }
+  ],
+    "extra_invalid_cases": [
+    {
+      "id": "zero_loan_term",
+      "loan_amount": 7000,
+      "annual_interest_rate": 5,
+      "years": 0,
+      "months":0,
+      "expected_monthly": "$333.33",
+      "expected_total": "$12,000.00",
+      "expected_interest": "$0.00"
+    }
+  ],
+  "edge_cases": [
+    {
+      "id": "zero_interest_rate",
+      "loan_amount": 12000,
+      "annual_interest_rate": 0,
+      "years": 3,
+      "expected_monthly": "$333.33",
+      "expected_total": "$12,000.00",
+      "expected_interest": "$0.00"
+    }
+  ],
+  "extra_cases": [
+  {
+      "id": "years_with_months_loan_term",
+      "loan_amount": 50000,
+      "annual_interest_rate": 2.5,
+      "years": 1,
+      "months":6,
+      "expected_monthly": "$2,833.08",
+      "expected_total": "$50,995.42",
+      "expected_interest": "$995.42"
+    }
+  ],
+  
+  "fixed_installments": {
+  "happy_path": {
+    "id": "fixed_installment_valid",
+    "loan_amount": 1000,
+    "annual_interest_rate": 5,
+    "fixed_installment": 100,
+    "expected_loan_payments": "$1,023.56",
+    "expected_interest": "$23.56"
+  },
+  "all_blank": {
+    "id": "fixed_installment_all_blank",
+    "loan_amount": "",
+    "annual_interest_rate": "",
+    "fixed_installment": "",
+    "expected_error": [
+      "Please provide a positive loan balance amount.",
+      "Please provide a positive interest rate value.",
+      "Please provide a postivie payback amount."
+    ]
+  }
+} 
+}
