@@ -4,7 +4,7 @@
 - **Base URL:** [https://www.calculator.net/](https://www.calculator.net/)
 - **Endpoint:** `/repayment-calculator.html` (Financial section)
 
-## Table of Contents
+### Table of Contents
 1. [Prerequisites](#prerequisites)
 2. [Installation](#installation)
 3. [Running Tests](#running-tests)
@@ -28,7 +28,7 @@ For this repository:
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/Malith-Senadheera/playwright-pytest-framework.git
+git clone https://github.com/Malitthh/pytest-automation.git
 cd <repository-directory>
 ```
 
@@ -58,6 +58,8 @@ pytest -m smoke
 # Run negative & edge-case tests
 pytest -m edge
 ```
+---
+
 ### Reporting 
 An HTML report is generated at `reports/`.
 
