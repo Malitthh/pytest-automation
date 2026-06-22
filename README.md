@@ -1,4 +1,4 @@
-# Pytest Automation Framework
+## Pytest Automation Framework
  
 Site Docs:
  
@@ -6,14 +6,12 @@ Site Docs:
 - Endpoint: /repayment-calculator.html (Financial section)
  
 ### Table of Contents
- 
 1. [Prerequisites](#prerequisites)
 2. [Installation](#installation)
 3. [Running Tests](#running-tests)
 4. [Contact](#contact)
  
 ---
- 
 ### Prerequisites
  
 Before you begin, ensure you have the following installed:
@@ -23,7 +21,6 @@ Before you begin, ensure you have the following installed:
 - [Git](https://git-scm.com/)
  
 ---
- 
 ### Installation
  
 **For this repository:**
@@ -44,7 +41,6 @@ Before you begin, ensure you have the following installed:
    playwright install
    ```
 ---
- 
 ### Running Tests
  
 ```bash
@@ -56,16 +52,14 @@ pytest -m smoke
  
 # Run negative & edge-case tests
 pytest -m edge
-```
- 
-An HTML report is generated at `reports/`.
- 
----
 
+An HTML report is generated at `reports/`.
+```
+---
 ### Important
 
 - **Note:** The repayment calculator currently shows **"postivie"** instead of **"positive"**. The test matches the current UI text so it passes. - minor bug.
-
+---
 ### Contact
  
 For questions or support, open an issue or reach out via the repository’s contact channels.
