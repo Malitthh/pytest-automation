@@ -1,6 +1,6 @@
-# Pytest Automation Framework
+## Pytest Automation Framework
 
-## Site Docs
+### Site Docs
 - **Base URL:** [https://www.calculator.net/](https://www.calculator.net/)
 - **Endpoint:** `/repayment-calculator.html` (Financial section)
 
@@ -12,7 +12,7 @@
 
 ---
 
-## Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -22,7 +22,7 @@ Before you begin, ensure you have the following installed:
 
 ---
 
-## Installation
+### Installation
 
 For this repository:
 
@@ -46,7 +46,7 @@ playwright install
 
 ---
 
-## Running Tests
+### Running Tests
 
 ```bash
 # Run all tests
@@ -58,15 +58,17 @@ pytest -m smoke
 # Run negative & edge-case tests
 pytest -m edge
 ```
-
+### Reporting 
 An HTML report is generated at `reports/`.
+
+---
 
 > [!IMPORTANT]
 > The repayment calculator for fixed installment currently displays "postivie" instead of "positive". The test matches the current UI text. so it passes — minor UI bug, not a test failure.
 
 ---
 
-## Contact
+### Contact
 
 For questions or support, open an issue or reach out via the repository's contact channels.
 
