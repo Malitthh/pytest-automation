@@ -62,7 +62,7 @@ pytest -m edge
 An HTML report is generated at `reports/`.
 
 > [!IMPORTANT]
-> The repayment calculator currently displays "postivie" instead of "positive". The test matches the current UI text. so it passes — minor UI bug, not a test failure.
+> The repayment calculator for fixed installment currently displays "postivie" instead of "positive". The test matches the current UI text. so it passes — minor UI bug, not a test failure.
 
 ---
 
