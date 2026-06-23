@@ -54,18 +54,6 @@
       "expected_error": "Please provide a positive payback time value."
     }
   ],
-    "extra_invalid_cases": [
-    {
-      "id": "zero_loan_term",
-      "loan_amount": 7000,
-      "annual_interest_rate": 5,
-      "years": 0,
-      "months":0,
-      "expected_monthly": "$333.33",
-      "expected_total": "$12,000.00",
-      "expected_interest": "$0.00"
-    }
-  ],
   "edge_cases": [
     {
       "id": "zero_interest_rate",
