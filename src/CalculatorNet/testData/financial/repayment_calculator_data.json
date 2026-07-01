@@ -27,7 +27,6 @@
       "years": "5",
       "month": "0",
       "expected_error": "Please provide a positive loan balance amount."
-
     },
     {
       "id": "non_numeric_loan_amount",
@@ -66,37 +65,50 @@
     }
   ],
   "extra_cases": [
-  {
+    {
       "id": "years_with_months_loan_term",
       "loan_amount": 50000,
       "annual_interest_rate": 2.5,
       "years": 1,
-      "months":6,
+      "months": 6,
       "expected_monthly": "$2,833.08",
       "expected_total": "$50,995.42",
       "expected_interest": "$995.42"
     }
   ],
-  
+
+  "months_only_cases": [
+    {
+      "id": "months_only_18m",
+      "loan_amount": 5000,
+      "annual_interest_rate": 6,
+      "years": 0,
+      "months": 18,
+      "expected_monthly": "$291.16",
+      "expected_total": "$5,240.86",
+      "expected_interest": "$240.86"
+    }
+  ],
+
   "fixed_installments": {
-  "happy_path": {
-    "id": "fixed_installment_valid",
-    "loan_amount": 1000,
-    "annual_interest_rate": 5,
-    "fixed_installment": 100,
-    "expected_loan_payments": "$1,023.56",
-    "expected_interest": "$23.56"
-  },
-  "all_blank": {
-    "id": "fixed_installment_all_blank",
-    "loan_amount": "",
-    "annual_interest_rate": "",
-    "fixed_installment": "",
-    "expected_error": [
-      "Please provide a positive loan balance amount.",
-      "Please provide a positive interest rate value.",
-      "Please provide a postivie payback amount."
-    ]
+    "happy_path": {
+      "id": "fixed_installment_valid",
+      "loan_amount": 1000,
+      "annual_interest_rate": 5,
+      "fixed_installment": 100,
+      "expected_loan_payments": "$1,023.56",
+      "expected_interest": "$23.56"
+    },
+    "all_blank": {
+      "id": "fixed_installment_all_blank",
+      "loan_amount": "",
+      "annual_interest_rate": "",
+      "fixed_installment": "",
+      "expected_error": [
+        "Please provide a positive loan balance amount.",
+        "Please provide a positive interest rate value.",
+        "Please provide a postivie payback amount."
+      ]
+    }
   }
-} 
 }
